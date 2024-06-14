@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Your Orders</title>
+        <link rel="shortcut icon" href="/IMAGES/icons8-amazon-100.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <img src="/IMAGES/amazon.png">
+                    </div>
+                    <div class="location">
+                        <p class="top-text">Deliver to</p>
+                        <div class="location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="bottom-text">India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-center">
+                    <select class="search-dropdown">
+                        <option>All</option>
+                        <option>Appliances for your home | Up to 55% off</option>
+                        <option>Revamp your home in style</option>
+                        <option>Starting ₹99 | Amazon Brands & more</option>
+                        <option>Starting ₹199 | Amazon Brands & more</option>
+                        <option>Automotive essentials | Up to 60% off</option>
+                        <option>Up to 60% off | Styles for women</option>
+                        <option>Min. 40% off | Baby essentials | Amazon brands</option>
+                        <option>Up to 60% off | Professional tools, testing & more</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon" class="search-box">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"
+                            style="color: #28416c;">
+                        </i>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <div class="language-option">
+                        <div class="flag">
+                            <i class="fa-regular fa-flag"></i>
+                        </div>
+                        <select class="select-language">
+                            <option>EN</option>
+                            <option>HI</option>
+                            <option>TA</option>
+                            <option>TE</option>
+                            <option>KN</option>
+                            <option>ML</option>
+                            <option>BN</option>
+                            <option>MR</option>
+                        </select>
+                    </div>
+
+                    <div class="account-option">
+                        <p class="top-text">
+                            <a href="login.html">Hello, Sign in</a>
+                        </p>
+                        <select class="select-account">
+                            <option value="Account">
+                                Account & Lists
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="order-option">
+                        <p class="top-text">
+                            Returns
+                        </p>
+                        <p class="bottom-text">
+                            & Orders
+                        </p>
+                    </div>
+
+                    <div class="cart-option">
+                        <div class="cart-logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <a href="cart.html">Cart</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="nav-options">
+                <div class="all-logo">
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="list">All</p>
+                </div>
+
+                <div class="options">
+                    <p>Fresh</p>
+                    <p>Amazon MiniTV</p>
+                    <p>Sell</p>
+                    <p>Best Sellers</p>
+                    <p>Mobiles</p>
+                    <p>Today's Deals</p>
+                    <p>Electronics</p>
+                    <p>Prime</p>
+                    <p>Fashion</p>
+                    <p>Customer Service</p>
+                    <p>Home & Kitchen</p>
+                    <p>New Release</p>
+                    <p>Amazon Pay</p>
+                    <p>Computers</p>
+                    <p>Gift Ideas</p>
+                </div>
+            </div>
+        </header>
+
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+nav {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.order-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-filters ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.order-filters ul li {
+    margin-right: 20px;
+}
+
+.order-filters ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.order-filters ul li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #e47911;
+}
+
+.filter-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.filter-dropdown label {
+    margin-right: 10px;
+}
+
+.filter-dropdown select {
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.search-orders {
+    display: flex;
+    align-items: center;
+}
+
+.search-orders input {
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-orders button {
+    background-color: #e47911;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.no-orders {
+    font-size: 14px;
+    color: #666;
+}
+
+.no-orders a {
+    color: #0066c0;
+    text-decoration: none;
+}
+   
+</style>
+<body>
+    <div class="container1">
+        <nav>
+            <a href="#">Your Account</a> &gt; <span>Your Orders</span>
+        </nav>
+        <h1>Your Orders</h1>
+        <div class="order-filters">
+            <ul>
+                <li class="active">Orders</li>
+                <li><a href="#">Buy Again</a></li>
+                <li><a href="#">Not Yet Shipped</a></li>
+                <li><a href="#">Cancelled Orders</a></li>
+            </ul>
+            <div class="filter-dropdown">
+                <label for="order-timeframe">0 orders placed in</label>
+                <select id="order-timeframe">
+                    <option value="past-3-months">past 3 months</option>
+                    <option value="past-6-months">past 6 months</option>
+                    <option value="past-year">past year</option>
+                </select>
+            </div>
+            <div class="search-orders">
+                <input type="text" placeholder="Search all orders">
+                <button>Search Orders</button>
+            </div>
+        </div>
+        <div class="no-orders">
+            <p>Looks like you haven't placed an order in the last 3 months. <a href="#">View orders in 2024</a></p>
+        </div>
+    </div>
+        <footer>
+            <a href="#" class="back-option">
+                Back to top
+            </a>
+
+            <div class="footer-links">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Amazon Science</a>
+                </ul>
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell on Amazon Business</a>
+                    <a>Sell apps on Amazon</a>
+                    <a>Become an Affiliate</a>
+                    <a>Self-Publish with Us</a>
+                    <a>Host an Amazon Hub</a>
+                    <a>›See More Make Money with Us</a>
+                </ul>
+                <ul>
+                    <p>Amazon Payment Products</p>
+                    <a>Amazon Business Card</a>
+                    <a>Shop with Points</a>
+                    <a>Reload Your Balance</a>
+                    <a>Amazon Currency Converter</a>
+                </ul>
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a>Amazon and COVID-19</a>
+                    <a>Your Account</a>
+                    <a>Your Orders</a>
+                    <a>Shipping Rates & Policies</a>
+                    <a>Returns & Replacements</a>
+                    <a>Manage Your Content and Devices</a>
+                    <a>Amazon Assistant</a>
+                    <a>Help</a>
+                </ul>
+            </div>
+            <div class="country-info">
+                <div class="logo">
+                    <img src="/IMAGES/logo.png">
+                </div>
+                <div class="options">
+                    <select>
+                        <option value="En">
+                            English
+                        </option>
+                    </select>
+
+                    <select>
+                        <option value="4">
+                            India
+                        </option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="policies">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads Privacy Choices</a>
+                </div>
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </div>
+        </footer>
+    </body>
+
+</html>
